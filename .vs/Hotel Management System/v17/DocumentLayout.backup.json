@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\PRN123\\assignment\\Hotel Management System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN123\\assignment\\Hotel Management System\\DAL\\Migrations\\20250326044505_add migration a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DAL\\Migrations\\20250326044505_add migration a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC914A0-4971-4AD6-95C7-D132DA85E995}|DAL\\DAL.csproj|d:\\prn123\\assignment\\hotel management system\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4DC914A0-4971-4AD6-95C7-D132DA85E995}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0D4BF80F-B10B-42D1-8542-BBC2D9319AC2}|hoanglee\\hoanglee.csproj|d:\\prn123\\assignment\\hotel management system\\hoanglee\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D4BF80F-B10B-42D1-8542-BBC2D9319AC2}|hoanglee\\hoanglee.csproj|solutionrelative:hoanglee\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN123\\assignment\\Hotel Management System\\BAL\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BAL\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D4BF80F-B10B-42D1-8542-BBC2D9319AC2}|hoanglee\\hoanglee.csproj|d:\\prn123\\assignment\\hotel management system\\hoanglee\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -13,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{66863A0A-2A76-4544-9C6F-AF530D6BAB35}|BAL\\BAL.csproj|d:\\prn123\\assignment\\hotel management system\\bal\\bal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{66863A0A-2A76-4544-9C6F-AF530D6BAB35}|BAL\\BAL.csproj|solutionrelative:bal\\bal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC914A0-4971-4AD6-95C7-D132DA85E995}|DAL\\DAL.csproj|d:\\prn123\\assignment\\hotel management system\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4DC914A0-4971-4AD6-95C7-D132DA85E995}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66863A0A-2A76-4544-9C6F-AF530D6BAB35}|BAL\\BAL.csproj|d:\\prn123\\assignment\\hotel management system\\bal\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66863A0A-2A76-4544-9C6F-AF530D6BAB35}|BAL\\BAL.csproj|solutionrelative:bal\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DC914A0-4971-4AD6-95C7-D132DA85E995}|DAL\\DAL.csproj|d:\\prn123\\assignment\\hotel management system\\dal\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,7 +98,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "20250326044505_add migration a.cs",
+              "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\Migrations\\20250326044505_add migration a.cs",
+              "RelativeDocumentMoniker": "DAL\\Migrations\\20250326044505_add migration a.cs",
+              "ToolTip": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\Migrations\\20250326044505_add migration a.cs",
+              "RelativeToolTip": "DAL\\Migrations\\20250326044505_add migration a.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T04:45:05.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\hoanglee\\App.xaml",
               "RelativeDocumentMoniker": "hoanglee\\App.xaml",
@@ -105,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "BAL.csproj",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\BAL\\BAL.csproj",
               "RelativeDocumentMoniker": "BAL\\BAL.csproj",
@@ -113,23 +130,25 @@
               "RelativeToolTip": "BAL\\BAL.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-26T03:28:27.431Z"
+              "WhenOpened": "2025-03-26T03:28:27.431Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "DAL.csproj",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\DAL.csproj",
               "RelativeDocumentMoniker": "DAL\\DAL.csproj",
               "ToolTip": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\DAL.csproj",
               "RelativeToolTip": "DAL\\DAL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-26T03:29:23.776Z"
+              "WhenOpened": "2025-03-26T03:29:23.776Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\BAL\\UserService.cs",
               "RelativeDocumentMoniker": "BAL\\UserService.cs",
@@ -141,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Repository\\UserRepository.cs",
@@ -153,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RoomType.cs",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\models\\RoomType.cs",
               "RelativeDocumentMoniker": "DAL\\models\\RoomType.cs",
@@ -165,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Room.cs",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\models\\Room.cs",
               "RelativeDocumentMoniker": "DAL\\models\\Room.cs",
@@ -177,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\models\\Customer.cs",
               "RelativeDocumentMoniker": "DAL\\models\\Customer.cs",
@@ -189,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FUMiniHotelManagementContext.cs",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\models\\FUMiniHotelManagementContext.cs",
               "RelativeDocumentMoniker": "DAL\\models\\FUMiniHotelManagementContext.cs",
@@ -201,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\hoanglee\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "hoanglee\\LoginWindow.xaml",
@@ -212,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\hoanglee\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "hoanglee\\LoginWindow.xaml.cs",
@@ -225,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "BookingReservation.cs",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\models\\BookingReservation.cs",
               "RelativeDocumentMoniker": "DAL\\models\\BookingReservation.cs",
@@ -237,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BookingDetail.cs",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\models\\BookingDetail.cs",
               "RelativeDocumentMoniker": "DAL\\models\\BookingDetail.cs",
@@ -249,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\hoanglee\\appsettings.json",
               "RelativeDocumentMoniker": "hoanglee\\appsettings.json",
@@ -261,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "hoanglee.csproj",
               "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel Management System\\hoanglee\\hoanglee.csproj",
               "RelativeDocumentMoniker": "hoanglee\\hoanglee.csproj",
@@ -269,7 +288,8 @@
               "RelativeToolTip": "hoanglee\\hoanglee.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-26T03:19:13.908Z"
+              "WhenOpened": "2025-03-26T03:19:13.908Z",
+              "EditorCaption": ""
             }
           ]
         },
