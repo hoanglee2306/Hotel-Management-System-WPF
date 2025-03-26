@@ -20,4 +20,11 @@ public partial class Customer
     public string Password { get; set; } = null!;
 
     public virtual ICollection<BookingReservation> BookingReservations { get; set; } = new List<BookingReservation>();
+    public int CustomerType { get; set; }
+}
+
+public enum CustomerType
+{
+    Customer,
+    Admin    
 }
