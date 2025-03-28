@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converters="clr-namespace:hoanglee.Converters">
+    
+    <!-- Visibility Converters -->
+    <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    <converters:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibilityConverter"/>
+    <converters:ZeroToVisibilityConverter x:Key="ZeroToVisibilityConverter"/>
+    <converters:NonZeroToVisibilityConverter x:Key="NonZeroToVisibilityConverter"/>
+    <converters:StringToVisibilityConverter x:Key="StringToVisibilityConverter"/>
+    
+    <!-- Boolean Converters -->
+    <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+    <converters:NotNullToBooleanConverter x:Key="NotNullToBooleanConverter"/>
+    
+    <!-- Date Converters -->
+    <converters:DateOnlyToDateTimeConverter x:Key="DateOnlyToDateTimeConverter"/>
+    <converters:DateRangeToDaysConverter x:Key="DateRangeToDaysConverter"/>
+    <converters:DateRangeConverter x:Key="DateRangeConverter"/>
+    
+    <!-- Status Converters -->
+    <converters:StatusToBrushConverter x:Key="StatusToBrushConverter"/>
+    <converters:StatusToTextConverter x:Key="StatusToTextConverter"/>
+    <converters:RoomStatusToBrushConverter x:Key="RoomStatusToBrushConverter"/>
+    <converters:RoomStatusToTextConverter x:Key="RoomStatusToTextConverter"/>
+    <converters:BookingStatusToBrushConverter x:Key="BookingStatusToBrushConverter"/>
+    <converters:BookingStatusToTextConverter x:Key="BookingStatusToTextConverter"/>
+    
+    <!-- UI Converters -->
+    <converters:EditModeToBackgroundConverter x:Key="EditModeToBackgroundConverter"/>
+    <converters:RoomIdToTitleConverter x:Key="RoomIdToTitleConverter"/>
+    <converters:BookingIdToTitleConverter x:Key="BookingIdToTitleConverter"/>
+    <converters:StringEqualsConverter x:Key="StringEqualsConverter"/>
+    <converters:OccupancyToColorConverter x:Key="OccupancyToColorConverter"/>
+    <converters:MaxRevenueConverter x:Key="MaxRevenueConverter"/>
+    
+</ResourceDictionary>

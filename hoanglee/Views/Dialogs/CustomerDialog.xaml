@@ -1,0 +1,100 @@
+﻿<Window x:Class="hoanglee.Views.Dialogs.CustomerDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hoanglee.Views.Dialogs"
+        mc:Ignorable="d"
+        Title="{Binding DialogTitle}" 
+        Height="500" Width="500"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+    
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,5,0,2"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="Margin" Value="0,2,0,10"/>
+        </Style>
+        <Style TargetType="PasswordBox">
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="Margin" Value="0,2,0,10"/>
+        </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="Margin" Value="0,2,0,10"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="Margin" Value="0,2,0,10"/>
+        </Style>
+    </Window.Resources>
+    
+    <Border Background="White" Padding="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Header -->
+            <TextBlock Grid.Row="0" Text="{Binding DialogTitle}" 
+                       FontSize="20" FontWeight="Bold" Margin="0,0,0,15"/>
+            
+            <!-- Form -->
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBlock Text="Full Name *"/>
+                    <TextBox Text="{Binding Customer.CustomerFullName, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Text="{Binding NameError}" Foreground="Red" Margin="0,-8,0,5" 
+                               Visibility="{Binding NameError, Converter={StaticResource StringToVisibilityConverter}}"/>
+                    
+                    <TextBlock Text="Email Address *"/>
+                    <TextBox Text="{Binding Customer.EmailAddress, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Text="{Binding EmailError}" Foreground="Red" Margin="0,-8,0,5" 
+                               Visibility="{Binding EmailError, Converter={StaticResource StringToVisibilityConverter}}"/>
+                    
+                    <TextBlock Text="Password *" Visibility="{Binding IsNewCustomer, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                    <PasswordBox x:Name="PasswordBox" Margin="0,2,0,10" Padding="8"
+                                 PasswordChanged="PasswordBox_PasswordChanged"
+                                 Visibility="{Binding IsNewCustomer, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                    <TextBlock Text="{Binding PasswordError}" Foreground="Red" Margin="0,-8,0,5" 
+                               Visibility="{Binding PasswordError, Converter={StaticResource StringToVisibilityConverter}}"/>
+                    
+                    <TextBlock Text="Phone Number"/>
+                    <TextBox Text="{Binding Customer.Telephone, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Text="{Binding PhoneError}" Foreground="Red" Margin="0,-8,0,5" 
+                               Visibility="{Binding PhoneError, Converter={StaticResource StringToVisibilityConverter}}"/>
+                    
+                    <TextBlock Text="Birthday"/>
+                    <DatePicker SelectedDate="{Binding BirthdayDate, Mode=TwoWay}"/>
+                    
+                    <TextBlock Text="Status"/>
+                    <ComboBox SelectedIndex="{Binding StatusIndex}">
+                        <ComboBoxItem Content="Active"/>
+                        <ComboBoxItem Content="Inactive"/>
+                    </ComboBox>
+                    
+                    <TextBlock Text="User Type"/>
+                    <ComboBox SelectedIndex="{Binding UserTypeIndex}">
+                        <ComboBoxItem Content="Customer"/>
+                        <ComboBoxItem Content="Admin"/>
+                    </ComboBox>
+                </StackPanel>
+            </ScrollViewer>
+            
+            <!-- Buttons -->
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+                <Button Content="Save" Width="100" Height="35" Margin="0,0,10,0"
+                        Command="{Binding SaveCommand}" IsDefault="True"
+                        Background="#4CAF50" Foreground="White" BorderThickness="0"/>
+                <Button Content="Cancel" Width="100" Height="35" 
+                        Command="{Binding CancelCommand}" IsCancel="True"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
