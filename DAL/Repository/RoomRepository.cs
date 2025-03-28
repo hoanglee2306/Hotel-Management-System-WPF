@@ -23,23 +23,37 @@ namespace DAL.Repository
         // Get available rooms for a date range
         public IEnumerable<Room> GetAvailableRooms(DateTime checkInDate, DateTime checkOutDate)
         {
-            // Convert DateTime to DateOnly for comparison with model
-            DateOnly checkIn = DateOnly.FromDateTime(checkInDate);
-            DateOnly checkOut = DateOnly.FromDateTime(checkOutDate);
-            
-            var bookedRoomIds = _context.BookingDetails
-                .Where(bd => bd.BookingReservation.BookingStatus == 1 && // Only consider active bookings
-                      ((bd.BookingReservation.CheckinDate <= checkOut && 
-                        bd.BookingReservation.CheckoutDate >= checkIn)))
-                .Select(bd => bd.RoomId)
-                .Distinct()
-                .ToList();
+            try
+            {
+                // Lấy danh sách các phòng đã được đặt trong khoảng thời gian
+                var bookedRoomIds = _context.BookingDetails
+                    .Where(bd => 
+                        bd.BookingReservation.BookingStatus == 1 && // Chỉ xem xét các đặt phòng đang hoạt động
+                        (
+                            // Kiểm tra xem có sự chồng chéo về thời gian không
+                            (bd.StartDate <= DateOnly.FromDateTime(checkOutDate) && 
+                             bd.EndDate >= DateOnly.FromDateTime(checkInDate))
+                        )
+                    )
+                    .Select(bd => bd.RoomId)
+                    .Distinct()
+                    .ToList();
 
-            return _dbSet
-                .Include(r => r.RoomType)
-                .Where(r => !bookedRoomIds.Contains(r.RoomId) && r.RoomStatus == 1)
-                .OrderBy(r => r.RoomNumber)
-                .ToList();
+                // Lấy tất cả các phòng đang hoạt động không nằm trong danh sách đã đặt
+                var availableRooms = _dbSet
+                    .Include(r => r.RoomType)
+                    .Where(r => r.RoomStatus == 1)
+                    .ToList()
+                    .Where(r => !bookedRoomIds.Contains(r.RoomId))
+                    .OrderBy(r => r.RoomNumber)
+                    .ToList();
+
+                return availableRooms;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error getting available rooms: {ex.Message}", ex);
+            }
         }
 
         // Get rooms by type

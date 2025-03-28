@@ -8,6 +8,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <!-- Thêm đoạn này để copy appsettings.json vào thư mục bin -->
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <!-- Phần còn lại giữ nguyên -->
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
       <PrivateAssets>all</PrivateAssets>
@@ -20,6 +28,15 @@
   <ItemGroup>
     <ProjectReference Include="..\BAL\BAL.csproj" />
     <ProjectReference Include="..\DAL\DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Models\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Views\Dialogs\" />
   </ItemGroup>
 
 </Project>

@@ -25,6 +25,6 @@ public partial class Customer
 
 public enum CustomerType
 {
-    Customer,
-    Admin    
+    Customer = 2,
+    Admin = 1
 }

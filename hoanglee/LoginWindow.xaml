@@ -4,9 +4,70 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hoanglee"
+        xmlns:viewmodels="clr-namespace:hoanglee.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="FU Mini Hotel Management - Login" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,5,0,5"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="0,5,0,10"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+        <Style TargetType="PasswordBox">
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="0,5,0,10"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="15,5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="MinWidth" Value="80"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
-
+        <Border Background="White" CornerRadius="10" Margin="20" Padding="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="-90" ShadowDepth="2" Opacity="0.2"/>
+            </Border.Effect>
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <!-- Header -->
+                <StackPanel Grid.Row="0">
+                    <TextBlock Text="FU Mini Hotel Management" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                    <TextBlock Text="Login to your account" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                    <Separator/>
+                </StackPanel>
+                
+                <!-- Login Form -->
+                <StackPanel Grid.Row="1" Margin="30,20">
+                    <TextBlock Text="Email" FontWeight="Medium"/>
+                    <TextBox x:Name="txtEmail" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
+                    
+                    <TextBlock Text="Password" FontWeight="Medium"/>
+                    <PasswordBox x:Name="txtPassword" PasswordChanged="PasswordBox_PasswordChanged"/>
+                    
+                    <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" TextWrapping="Wrap" Margin="0,10"/>
+                </StackPanel>
+                
+                <!-- Buttons -->
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Content="Login" Command="{Binding LoginCommand}" IsDefault="True" Background="#007BFF" Foreground="White" BorderThickness="0"/>
+                    <Button Content="Exit" Command="{Binding ExitCommand}" IsCancel="True"/>
+                </StackPanel>
+            </Grid>
+        </Border>
     </Grid>
 </Window>

@@ -4529,11 +4529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN123\\assignment\\Hotel Management System\\hoanglee\\hoanglee.csproj",
+      "projectUniqueName": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\hoanglee\\hoanglee.csproj",
       "projectName": "hoanglee",
-      "projectPath": "D:\\PRN123\\assignment\\Hotel Management System\\hoanglee\\hoanglee.csproj",
+      "projectPath": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\hoanglee\\hoanglee.csproj",
       "packagesPath": "C:\\Users\\dinggdinggg\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN123\\assignment\\Hotel Management System\\hoanglee\\obj\\",
+      "outputPath": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\hoanglee\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4554,11 +4554,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\PRN123\\assignment\\Hotel Management System\\BAL\\BAL.csproj": {
-              "projectPath": "D:\\PRN123\\assignment\\Hotel Management System\\BAL\\BAL.csproj"
+            "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\BAL\\BAL.csproj": {
+              "projectPath": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\BAL\\BAL.csproj"
             },
-            "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\PRN123\\assignment\\Hotel Management System\\DAL\\DAL.csproj"
+            "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\DAL\\DAL.csproj"
             }
           }
         }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\PRN123\assignment\Hotel Management System\hoanglee\obj\Release\net8.0-windows\
+D:\PRN123\assignment\Hotel-Management-System-WPF\hoanglee\obj\Release\net8.0-windows\
 hoanglee
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-D:\PRN123\assignment\Hotel Management System\hoanglee\App.xaml
-1-1623698816
+D:\PRN123\assignment\Hotel-Management-System-WPF\hoanglee\App.xaml
+111639275234
 
-41350474843
-2461560101779
-LoginWindow.xaml;
+36-501642215
+246-1951615956
+LoginWindow.xaml;Resources\Converters.xaml;Views\AdminDashboard.xaml;Views\BookingManagementView.xaml;Views\CustomerBookingsView.xaml;Views\CustomerDashboard.xaml;Views\CustomerManagementView.xaml;Views\CustomerProfileView.xaml;Views\Dialogs\CustomerDialog.xaml;Views\ReportView.xaml;Views\RoomManagementView.xaml;
 
 True
 

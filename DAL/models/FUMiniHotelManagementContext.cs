@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
+
 namespace DAL.Models;
 
 public partial class FUMiniHotelManagementContext : DbContext

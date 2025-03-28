@@ -1,23 +1,29 @@
-﻿using System.Text;
+﻿using hoanglee.ViewModels;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace hoanglee;
-
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
-public partial class LoginWindow : Window
+namespace hoanglee
 {
-    public LoginWindow()
+    public partial class LoginWindow : Window
     {
-        InitializeComponent();
+        private readonly LoginViewModel _viewModel;
+        
+        public LoginWindow()
+        {
+            InitializeComponent();
+            _viewModel = new LoginViewModel();
+            DataContext = _viewModel;
+            
+            // Set focus to email textbox
+            Loaded += (s, e) => txtEmail.Focus();
+        }
+        
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is LoginViewModel viewModel)
+            {
+                viewModel.Password = ((PasswordBox)sender).Password;
+            }
+        }
     }
 }
