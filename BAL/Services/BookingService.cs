@@ -1,4 +1,4 @@
-using BAL.Interfaces;
+﻿using BAL.Interfaces;
 using DAL;
 using DAL.Models;
 using DAL.Repository;
@@ -67,30 +67,73 @@ namespace BAL.Services
 
         public void UpdateBooking(BookingReservation booking, IEnumerable<BookingDetail> details)
         {
-            // Get existing booking
-            var existingBooking = _bookingRepository.GetBookingWithDetails(booking.BookingReservationId);
-            if (existingBooking == null)
-                throw new Exception("Booking not found");
+            try
+            {
+                // Lấy booking đã tồn tại
+                var existingBooking = _bookingRepository.GetBookingWithDetails(booking.BookingReservationId);
+                if (existingBooking == null)
+                    throw new Exception("Booking not found");
 
-            // Remove existing details
-            foreach (var detail in existingBooking.BookingDetails.ToList())
-            {
-                _bookingDetailRepository.Remove(detail);
+                // Cập nhật thuộc tính của booking
+                existingBooking.CustomerId = booking.CustomerId;
+                existingBooking.BookingDate = booking.BookingDate;
+                existingBooking.CheckinDate = booking.CheckinDate;
+                existingBooking.CheckoutDate = booking.CheckoutDate;
+                existingBooking.BookingStatus = booking.BookingStatus;
+                existingBooking.Notes = booking.Notes;
+
+                // Lưu thay đổi booking trước khi xử lý chi tiết
+                _bookingRepository.SaveChanges();
+
+                // Lấy danh sách chi tiết booking hiện có
+                var existingDetails = _bookingDetailRepository.GetDetailsByReservation(existingBooking.BookingReservationId).ToList();
+
+                // Xóa tất cả chi tiết booking cũ
+                foreach (var detail in existingDetails)
+                {
+                    _bookingDetailRepository.Remove(detail);
+                }
+
+                // Lưu việc xóa chi tiết
+                _bookingDetailRepository.SaveChanges();
+
+                // Thêm chi tiết mới
+                foreach (var detail in details)
+                {
+                    // Đảm bảo BookingReservationId được đặt đúng
+                    detail.BookingReservationId = existingBooking.BookingReservationId;
+
+                    // Tạo một đối tượng BookingDetail mới để tránh vấn đề tracking
+                    var newDetail = new BookingDetail
+                    {
+                        BookingReservationId = detail.BookingReservationId,
+                        RoomId = detail.RoomId,
+                        RoomPrice = detail.RoomPrice,
+                        ActualPrice = detail.ActualPrice,
+                        StartDate = detail.StartDate,
+                        EndDate = detail.EndDate
+                    };
+
+                    _bookingDetailRepository.Add(newDetail);
+                }
+
+                // Lưu việc thêm chi tiết mới
+                _bookingDetailRepository.SaveChanges();
+
+                // Cập nhật tổng giá và lưu
+                existingBooking.TotalPrice = CalculateTotalBookingPrice(details);
+                _bookingRepository.SaveChanges();
             }
-            
-            // Update booking information
-            booking.TotalPrice = CalculateTotalBookingPrice(details);
-            _bookingRepository.Update(booking);
-            
-            // Add new details
-            foreach (var detail in details)
+            catch (Exception ex)
             {
-                detail.BookingReservationId = booking.BookingReservationId;
-                _bookingDetailRepository.Add(detail);
+                // Ghi log lỗi chi tiết - trong môi trường thực, nên sử dụng logging framework
+                Console.WriteLine($"Lỗi cập nhật booking: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                }
+                throw;
             }
-            
-            _bookingDetailRepository.SaveChanges();
-            _bookingRepository.SaveChanges();
         }
 
         public bool DeleteBooking(int id)

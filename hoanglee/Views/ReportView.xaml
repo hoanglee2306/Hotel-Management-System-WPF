@@ -26,12 +26,12 @@
                 </Grid.ColumnDefinitions>
                 
                 <TextBlock Grid.Column="0" Text="Report Type:" VerticalAlignment="Center" Margin="0,0,10,0"/>
-                <ComboBox Grid.Column="1" SelectedValue="{Binding ReportType}" Width="150" Margin="0,0,15,0">
+                <ComboBox Grid.Column="1" SelectedValue="{Binding ReportType}" SelectedValuePath="Content" Width="150" Margin="0,0,15,0">
                     <ComboBoxItem Content="Bookings"/>
                     <ComboBoxItem Content="Occupancy"/>
                     <ComboBoxItem Content="Revenue"/>
                 </ComboBox>
-                
+
                 <TextBlock Grid.Column="2" Text="From:" VerticalAlignment="Center" Margin="0,0,5,0"/>
                 <DatePicker Grid.Column="3" SelectedDate="{Binding StartDate, Converter={StaticResource DateOnlyToDateTimeConverter}}" Width="120" Margin="0,0,15,0"/>
                 
