@@ -14,3 +14,19 @@ D:\PRN123\assignment\Hotel Management System\BAL\obj\Debug\net8.0\BAL.dll
 D:\PRN123\assignment\Hotel Management System\BAL\obj\Debug\net8.0\refint\BAL.dll
 D:\PRN123\assignment\Hotel Management System\BAL\obj\Debug\net8.0\BAL.pdb
 D:\PRN123\assignment\Hotel Management System\BAL\obj\Debug\net8.0\ref\BAL.dll
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\bin\Debug\net8.0\BAL.deps.json
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\bin\Debug\net8.0\BAL.dll
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\bin\Debug\net8.0\BAL.pdb
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\bin\Debug\net8.0\DAL.dll
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\bin\Debug\net8.0\DAL.pdb
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\BAL.csproj.AssemblyReference.cache
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\BAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\BAL.AssemblyInfoInputs.cache
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\BAL.AssemblyInfo.cs
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\BAL.csproj.CoreCompileInputs.cache
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\BAL.sourcelink.json
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\BAL.csproj.Up2Date
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\BAL.dll
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\refint\BAL.dll
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\BAL.pdb
+D:\PRN123\assignment\Hotel-Management-System-WPF\BAL\obj\Debug\net8.0\ref\BAL.dll

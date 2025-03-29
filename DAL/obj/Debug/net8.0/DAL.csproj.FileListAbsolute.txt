@@ -13,3 +13,18 @@ D:\PRN123\assignment\Hotel Management System\DAL\obj\Debug\net8.0\refint\DAL.dll
 D:\PRN123\assignment\Hotel Management System\DAL\obj\Debug\net8.0\DAL.pdb
 D:\PRN123\assignment\Hotel Management System\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 D:\PRN123\assignment\Hotel Management System\DAL\obj\Debug\net8.0\ref\DAL.dll
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\bin\Debug\net8.0\DAL.deps.json
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\bin\Debug\net8.0\DAL.dll
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\bin\Debug\net8.0\DAL.pdb
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\DAL.dll
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\refint\DAL.dll
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\DAL.pdb
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+D:\PRN123\assignment\Hotel-Management-System-WPF\DAL\obj\Debug\net8.0\ref\DAL.dll
