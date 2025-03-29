@@ -76,26 +76,29 @@ namespace BAL.Services
                     (c.Telephone != null && c.Telephone.Contains(searchTerm)))
                 .ToList();
         }
-        
+
         public void UpdateCustomerProfile(Customer customer)
         {
-            // Get existing customer to preserve certain fields
+            // Get a reference to the existing entity
             var existingCustomer = _customerRepository.GetById(customer.CustomerId);
             if (existingCustomer == null)
                 throw new Exception("Customer not found");
-            
-            // Update only allowed fields for customer profile update
+
+            // Update properties manually
             existingCustomer.CustomerFullName = customer.CustomerFullName;
+            existingCustomer.EmailAddress = customer.EmailAddress;
             existingCustomer.Telephone = customer.Telephone;
             existingCustomer.CustomerBirthday = customer.CustomerBirthday;
-            
+            existingCustomer.CustomerStatus = customer.CustomerStatus;
+            existingCustomer.CustomerType = customer.CustomerType;
+
             // Only update password if provided
             if (!string.IsNullOrEmpty(customer.Password))
             {
                 existingCustomer.Password = customer.Password;
             }
-            
-            _customerRepository.Update(existingCustomer);
+
+            // No need to call Update() since we're modifying a tracked entity
             _customerRepository.SaveChanges();
         }
     }

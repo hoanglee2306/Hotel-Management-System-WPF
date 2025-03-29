@@ -43,8 +43,20 @@ namespace DAL.Repository
             _dbSet.AddRange(entities);
         }
 
-        public void Update(T entity)
+        public virtual void Update(T entity)
         {
+            // Detach any existing entity with the same key to avoid tracking conflicts
+            var keyValues = _context.Model.FindEntityType(typeof(T)).FindPrimaryKey().Properties
+                .Select(p => p.PropertyInfo.GetValue(entity)).ToArray();
+
+            var existingEntity = _dbSet.Find(keyValues);
+
+            if (existingEntity != null)
+            {
+                _context.Entry(existingEntity).State = EntityState.Detached;
+            }
+
+            // Now attach and mark as modified
             _dbSet.Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
         }

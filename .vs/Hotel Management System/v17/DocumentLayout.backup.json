@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66863A0A-2A76-4544-9C6F-AF530D6BAB35}|BAL\\BAL.csproj|d:\\prn123\\assignment\\hotel-management-system-wpf\\bal\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66863A0A-2A76-4544-9C6F-AF530D6BAB35}|BAL\\BAL.csproj|solutionrelative:bal\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC914A0-4971-4AD6-95C7-D132DA85E995}|DAL\\DAL.csproj|d:\\prn123\\assignment\\hotel-management-system-wpf\\dal\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC914A0-4971-4AD6-95C7-D132DA85E995}|DAL\\DAL.csproj|solutionrelative:dal\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\BAL\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "BAL\\Services\\CustomerService.cs",
+              "ToolTip": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\BAL\\Services\\CustomerService.cs",
+              "RelativeToolTip": "BAL\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T07:34:27.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\DAL\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repository\\GenericRepository.cs",
+              "ToolTip": "D:\\PRN123\\assignment\\Hotel-Management-System-WPF\\DAL\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "DAL\\Repository\\GenericRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T07:33:34.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 73,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

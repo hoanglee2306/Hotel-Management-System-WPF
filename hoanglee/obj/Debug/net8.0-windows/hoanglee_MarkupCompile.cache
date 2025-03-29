@@ -16,5 +16,5 @@ D:\PRN123\assignment\Hotel-Management-System-WPF\hoanglee\App.xaml
 2461071370943
 LoginWindow.xaml;Resources\Converters.xaml;Views\AdminDashboard.xaml;Views\BookingManagementView.xaml;Views\CustomerBookingsView.xaml;Views\CustomerDashboard.xaml;Views\CustomerManagementView.xaml;Views\CustomerProfileView.xaml;Views\Dialogs\CustomerDialog.xaml;Views\ReportView.xaml;Views\RoomManagementView.xaml;
 
-True
+False
 

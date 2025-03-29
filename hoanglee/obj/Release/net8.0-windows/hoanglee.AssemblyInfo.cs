@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hoanglee")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6900f47b1603f7fb13e1ddec5082cbb5fea66b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30f59d01becfd0a76b9c3362dc5e9938ffdcd688")]
 [assembly: System.Reflection.AssemblyProductAttribute("hoanglee")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hoanglee")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
